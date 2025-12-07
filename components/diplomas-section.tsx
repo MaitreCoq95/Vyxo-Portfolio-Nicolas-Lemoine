@@ -48,13 +48,6 @@ export function DiplomasSection() {
     },
   ]
 
-  const terrainCertifications = [
-    { name: "ISO 9001", description: "Mise en place + audits" },
-    { name: "GDP / BPD Pharma", description: "Mise en conformité + certification" },
-    { name: "BPF / GMP", description: "Industrie pharma - étiquetage" },
-    { name: "ISO 14001", description: "Environnement" },
-  ]
-
   return (
     <section id="diplomas" className="py-20 bg-[#0A1B2A]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -134,22 +127,6 @@ export function DiplomasSection() {
                   </Card>
                 </motion.div>
               ))}
-            </div>
-
-            {/* Terrain Certifications */}
-            <div className="bg-[#0D2438] border border-[#1E4976] rounded-xl p-6 mb-6">
-              <h4 className="text-sm font-semibold text-cyan-400 mb-4 uppercase tracking-wide">Certifications Terrain</h4>
-              <div className="space-y-3">
-                {terrainCertifications.map((cert, index) => (
-                  <div key={index} className="flex items-center justify-between py-2 border-b border-gray-700/50 last:border-0">
-                    <div className="flex items-center gap-2">
-                      <CheckCircle2 className="w-4 h-4 text-cyan-400" />
-                      <span className="text-white font-medium text-sm">{cert.name}</span>
-                    </div>
-                    <span className="text-xs text-gray-400">{cert.description}</span>
-                  </div>
-                ))}
-              </div>
             </div>
 
             {/* Data & Governance Certifications */}
