@@ -35,19 +35,6 @@ export function DiplomasSection() {
     },
   ]
 
-  const certifications = [
-    {
-      title: "Lean Six Sigma Green Belt",
-      description: "Méthodologie DMAIC, résolution de problèmes, amélioration continue.",
-      icon: Award,
-    },
-    {
-      title: "Audits Internes - ISO 19011",
-      description: "Techniques d'audit, analyse de conformité, rédaction rapports.",
-      icon: ShieldCheck,
-    },
-  ]
-
   return (
     <section id="diplomas" className="py-20 bg-[#0A1B2A]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -96,41 +83,8 @@ export function DiplomasSection() {
             </div>
           </div>
 
-          {/* Certifications & Expertises */}
-          <div>
-            <div className="flex items-center gap-2 mb-6">
-              <FileBadge className="w-6 h-6 text-cyan-400" />
-              <h3 className="text-xl font-semibold text-white">Certifications & Expertises</h3>
-            </div>
-
-            <div className="space-y-4 mb-8">
-              {certifications.map((cert, index) => (
-                <motion.div
-                  key={cert.title}
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                >
-                  <Card className="bg-[#0D2438] border-[#1E4976] hover:border-cyan-400/50 transition-all">
-                    <CardContent className="p-6">
-                      <div className="flex items-start gap-4">
-                        <div className="w-12 h-12 rounded-lg bg-cyan-400/10 flex items-center justify-center flex-shrink-0">
-                          <cert.icon className="w-6 h-6 text-cyan-400" />
-                        </div>
-                        <div>
-                          <h4 className="text-lg font-semibold text-white mb-1">{cert.title}</h4>
-                          <p className="text-sm text-gray-300">{cert.description}</p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* Data & Governance Certifications */}
-            <div className="bg-[#0D2438] border border-[#1E4976] rounded-xl p-6">
+          {/* Data & Governance Certifications */}
+          <div> className="bg-[#0D2438] border border-[#1E4976] rounded-xl p-6">
               <h4 className="text-sm font-semibold text-cyan-400 mb-4 uppercase tracking-wide">🟦 Certifications Data & Gouvernance</h4>
               <p className="text-xs text-gray-400 mb-4 italic">Spécifiques Finance & Reporting</p>
               
