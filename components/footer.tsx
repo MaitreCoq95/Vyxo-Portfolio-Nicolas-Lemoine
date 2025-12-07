@@ -68,7 +68,7 @@ export function Footer() {
                 06.00.00.00.00
               </a>
               <a
-                href="https://www.linkedin.com/in/nicolas-lemoine"
+                href="https://www.linkedin.com/in/nicolas-lemoine-32083417/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary text-sm"

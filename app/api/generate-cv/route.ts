@@ -30,7 +30,7 @@ export async function POST(req: Request) {
       - Résumé du profil : 10+ ans d'expérience, Expert Finance Multi-Pays (FR/BE/DE), Budgeting & Forecasting, Cost Control, Power BI, SAP.
       - Pourquoi ce profil matche avec l'offre (Score de match : ${jobAnalysis.matchScore}%) :
         - Points forts : ${jobAnalysis.keyMatches.join(", ")}.
-      - Contact : nicolas.lemoine@vyxoconsult.com | 06.00.00.00.00 | linkedin.com/in/nicolas-lemoine
+      - Contact : nicolas.lemoine@vyxoconsult.com | 06.00.00.00.00 | linkedin.com/in/nicolas-lemoine-32083417/
 
       **Page 2 : Analyse & Proposition de Valeur**
       - Analyse de l'offre : ${jobDescription.substring(0, 200)}...

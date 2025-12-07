@@ -41,7 +41,7 @@ export function Header() {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <a href="https://www.linkedin.com/in/nicolas-lemoine" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/nicolas-lemoine-32083417/" target="_blank" rel="noopener noreferrer">
               <Linkedin className="w-5 h-5 text-muted-foreground hover:text-primary transition-colors" />
             </a>
             <a href="mailto:nicolas.lemoine@vyxoconsult.com">
