@@ -4,32 +4,32 @@ const steps = [
   {
     step: "01",
     icon: Search,
-    title: "Diagnostic QSE",
-    description: "Analyse complète de votre système actuel",
+    title: "Diagnostic financier & qualité opérationnelle",
+    description: "Analyse précise des marges, coûts, variances, fiabilité des données et maturité process.",
   },
   {
     step: "02",
     icon: Map,
-    title: "Cartographie & Risques",
-    description: "Identification des zones critiques",
+    title: "Cartographie des flux, des données & des risques",
+    description: "Identification des ruptures process, incohérences de données, risques opérationnels et sources de variabilité.",
   },
   {
     step: "03",
     icon: FileCheck,
-    title: "Standardisation",
-    description: "Mise en place de process clairs",
+    title: "Standardisation & Excellence Opérationnelle",
+    description: "Création de processus, modèles financiers et règles de gestion homogènes pour une performance stable.",
   },
   {
     step: "04",
     icon: BarChart3,
-    title: "KPI & Automatisation",
-    description: "Tableaux de bord Power BI",
+    title: "KPI, Automatisation & Systèmes de pilotage",
+    description: "Construction de dashboards Power BI / Excel avancé et automatisation du reporting qualité + finances.",
   },
   {
     step: "05",
     icon: Award,
-    title: "Conformité + Audit + ROI",
-    description: "Certification et retour sur investissement",
+    title: "Pilotage, Excellence & ROI",
+    description: "Accompagnement DG/Comex, optimisation coûts et réduction du coût de non qualité avec gains mesurables.",
   },
 ]
 
@@ -41,7 +41,7 @@ export function MethodSection() {
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">Ma Méthode</span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2 mb-4">Méthode Vyxo — 5 étapes</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Une approche structurée et éprouvée pour transformer votre organisation
+            Une approche structurée et éprouvée pour transformer votre performance financière, votre qualité et vos opérations
           </p>
         </div>
 
