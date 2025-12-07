@@ -7,42 +7,53 @@ import { Card, CardContent } from "@/components/ui/card";
 export function DiplomasSection() {
   const diplomas = [
     {
-      title: "Master 2 Qualité, Sécurité, Environnement",
-      institution: "Université de Saint-Quentin-en-Yvelines",
+      title: "Master II International & Corporate Finance",
+      institution: "ISC Paris Business School – 2012",
       icon: GraduationCap,
-      skills: ["SMQ", "Gestion des risques", "Audit", "Réglementation"],
+      skills: ["Corporate Finance", "Contrôle de gestion", "Analyse financière", "Gestion des risques"],
       color: "text-cyan-400",
     },
     {
-      title: "Formation Anglais – Niveau C1",
-      institution: "Wall Street Institute",
+      title: "Baccalauréat Scientifique",
+      institution: "Lycée Fénelon Sainte-Marie – 2006",
       icon: ScrollText,
-      skills: ["Anglais professionnel", "Communication avancée", "Compréhension écrite & orale"],
+      skills: ["Mathématiques", "Rigueur analytique", "Esprit scientifique"],
       color: "text-blue-400",
+    },
+    {
+      title: "Auto-formation continue en Data & BI",
+      institution: "Parcours continu",
+      icon: Award,
+      skills: ["Excel avancé", "Power Pivot", "Power BI", "R Studio", "Data visualisation"],
+      color: "text-purple-400",
     },
   ];
 
   const certifications = [
     {
-      title: "Lean Six Sigma Green Belt",
-      description: "Méthodologie DMAIC, résolution de problèmes, amélioration continue.",
+      title: "Contrôle de Gestion & Pilotage de la Performance",
+      description: "Construction de budgets, forecasts, P&L analytiques et modèles de performance multi-pays (France, Benelux, Allemagne).",
       icon: Award,
     },
     {
-      title: "Audits Internes – ISO 19011",
-      description: "Techniques d’audit, analyse de conformité, rédaction rapports.",
+      title: "Data Quality & Variance Analysis",
+      description: "Mise sous contrôle de la qualité de la donnée financière, analyses d'écarts et standardisation du reporting pour Comex/Codir.",
       icon: ShieldCheck,
+    },
+    {
+      title: "Business Analyst – Projets digitaux européens",
+      description: "Référent financier sur projet digital paneuropéen (budget > 50 M€) : structuration, suivi budgétaire et reporting stratégique.",
+      icon: FileBadge,
     },
   ];
 
   const fieldCertifications = [
-    { name: "ISO 9001", desc: "Mise en place + audits" },
-    { name: "GDP / BPD Pharma", desc: "Mise en conformité + certification" },
-    { name: "BPF / GMP", desc: "Industrie pharma – étiquetage" },
-    { name: "ISO 14001", desc: "Environnement" },
-    { name: "ISO 45001", desc: "Santé & Sécurité" },
-    { name: "ISO 27001", desc: "Sécurité Info" },
-    { name: "EN 9120B", desc: "Aéronautique" },
+    { name: "Excel avancé / Power Pivot", desc: "Modélisation & automatisation des analyses" },
+    { name: "Power BI", desc: "Tableaux de bord de performance financière" },
+    { name: "Access / Bases de données", desc: "Outils maison de suivi & reporting" },
+    { name: "Business Objects / QlikView", desc: "Reporting et analyses multidimensionnelles" },
+    { name: "SAP", desc: "Intégration et extraction de données financières" },
+    { name: "R Studio", desc: "Analyses statistiques & exploration de données" },
   ];
 
   return (
@@ -156,7 +167,7 @@ export function DiplomasSection() {
                 className="mt-4"
               >
                 <h4 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-4">
-                  Certifications Terrain
+                  Outils & Stack
                 </h4>
                 <div className="grid gap-3">
                   {fieldCertifications.map((fc, i) => (

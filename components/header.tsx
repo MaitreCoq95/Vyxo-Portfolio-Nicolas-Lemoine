@@ -40,7 +40,6 @@ export function Header() {
             ))}
           </nav>
 
-          {/* Desktop Actions */}
           <div className="hidden md:flex items-center gap-4">
             <a href="https://www.linkedin.com/in/nicolas-lemoine" target="_blank" rel="noopener noreferrer">
               <Linkedin className="w-5 h-5 text-muted-foreground hover:text-primary transition-colors" />
@@ -48,9 +47,6 @@ export function Header() {
             <a href="mailto:nicolas.lemoine@vyxoconsult.com">
               <Mail className="w-5 h-5 text-muted-foreground hover:text-primary transition-colors" />
             </a>
-            <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-              <a href="#job-matcher">Job Matcher AI</a>
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -74,9 +70,6 @@ export function Header() {
                 {item.label}
               </a>
             ))}
-            <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-              <a href="#job-matcher" onClick={() => setIsOpen(false)}>Job Matcher AI</a>
-            </Button>
           </div>
         </div>
       )}

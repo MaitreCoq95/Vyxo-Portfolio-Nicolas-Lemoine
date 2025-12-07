@@ -40,13 +40,12 @@ export function HeroSection() {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 animate-glow" asChild>
-                <a href="#job-matcher">
-                  Job Matcher AI
+              <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
+                <a href="#contact">
+                  Me Contacter
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </a>
               </Button>
-
             </div>
           </div>
 
