@@ -1,20 +1,17 @@
-import { ArrowRight, X, Check } from "lucide-react"
+'use client'
 
-const comparisons = [
-  { before: "Marges floues, coûts non maîtrisés", after: "Drivers de marge identifiés et pilotés" },
-  { before: "Reporting mensuel en 20h, erreurs fréquentes", after: "Reporting automatisé en 20 min, fiable" },
-  { before: "Pas de forecast, pilotage à vue", after: "Budget structuré + forecast rolling fiable" },
-  { before: "Données Excel incohérentes, doublons", after: "Data quality sous contrôle, KPIs certifiés" },
-  { before: "Coûts cachés, gaspillages invisibles", after: "Coût de non-qualité mesuré + ROI tracé" },
-]
+import { ArrowRight, X, Check } from "lucide-react"
+import { useTranslation } from "@/lib/i18n/useTranslation"
 
 export function BeforeAfterSection() {
+  const { t } = useTranslation()
+
   return (
     <section className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Avant / Après mon intervention</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">Transformation concrète de votre performance financière et opérationnelle</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">{t.beforeAfter.title}</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">{t.beforeAfter.subtitle}</p>
         </div>
 
         <div className="max-w-4xl mx-auto">
@@ -23,9 +20,9 @@ export function BeforeAfterSection() {
             <div className="space-y-4">
               <h3 className="text-lg font-semibold text-destructive flex items-center gap-2">
                 <X className="w-5 h-5" />
-                Avant
+                {t.beforeAfter.before}
               </h3>
-              {comparisons.map((item) => (
+              {t.beforeAfter.comparisons.map((item) => (
                 <div
                   key={item.before}
                   className="flex items-center gap-3 p-4 bg-destructive/10 rounded-lg border border-destructive/20"
@@ -40,9 +37,9 @@ export function BeforeAfterSection() {
             <div className="space-y-4">
               <h3 className="text-lg font-semibold text-primary flex items-center gap-2">
                 <Check className="w-5 h-5" />
-                Après
+                {t.beforeAfter.after}
               </h3>
-              {comparisons.map((item) => (
+              {t.beforeAfter.comparisons.map((item) => (
                 <div
                   key={item.after}
                   className="flex items-center gap-3 p-4 bg-primary/10 rounded-lg border border-primary/20"
