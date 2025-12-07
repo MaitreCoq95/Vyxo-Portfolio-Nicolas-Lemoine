@@ -15,11 +15,11 @@ export async function POST(req: Request) {
       .max(100)
       .describe("Score de compatibilité global en %"),
     scores_par_axes: z.object({
-      secteur_transport_logistique_pharma: z.number().min(0).max(100),
-      qualite_qse_iso_gdp_bpf: z.number().min(0).max(100),
-      excellence_operationnelle_lean: z.number().min(0).max(100),
-      management_multisite_codir: z.number().min(0).max(100),
-      digitalisation_data_ia: z.number().min(0).max(100),
+      finance_controle_gestion: z.number().min(0).max(100),
+      budgeting_forecasting: z.number().min(0).max(100),
+      cost_control_optimisation: z.number().min(0).max(100),
+      pilotage_multi_pays: z.number().min(0).max(100),
+      digitalisation_bi_data: z.number().min(0).max(100),
     }),
     points_forts: z
       .array(z.string())
@@ -44,8 +44,8 @@ export async function POST(req: Request) {
   const result = await streamObject({
     model: openai("gpt-4o"),
     schema,
-    system: `Tu es un assistant spécialisé en matching de profils QSE / QHSE / Excellence Opérationnelle / Pharma / Logistique.
-Ta mission : comparer le profil de Vivien Closse à une offre d’emploi ou un besoin d’entreprise, et produire :
+    system: `Tu es un assistant spécialisé en matching de profils Finance / Contrôle de Gestion / Performance Management.
+Ta mission : comparer le profil de Nicolas Lemoine à une offre d'emploi ou un besoin d'entreprise, et produire :
 
 Un score de compatibilité global en %
 
@@ -53,46 +53,40 @@ Des scores par compétences clés
 
 Une analyse détaillée lisible par un recruteur
 
-Un court pitch expliquant pourquoi Vivien est pertinent pour ce poste.
+Un court pitch expliquant pourquoi Nicolas est pertinent pour ce poste.
 
 Tu dois être précis, honnête et professionnel, sans survendre mais en mettant en avant les points forts.
 Tu dois TOUJOURS répondre en JSON valide.
 
-PROFIL DE VIVIEN CLOSSE (RÉSUMÉ) :
+PROFIL DE NICOLAS LEMOINE (RÉSUMÉ) :
 
-QSE & Excellence Opérationnelle – Freelance / Transition (2024 – auj.)
+Performance & Finance Strategist – Vyxo Consulting (2024 – auj.)
 
-Audit flash, diagnostic 360, mise en conformité GDP, structuration SMQ pour PME agro / transport, automatisation Power BI et accompagnement terrain. Construction de SaaS opérationnel.
+Conseil en pilotage de la performance financière, structuration budgétaire, optimisation des coûts, mise en place d'outils de pilotage (Power BI, Excel), audit de la donnée financière, support COMEX/CODIR.
 
-Responsable Qualité Groupe (Holding) – Partnair & Sea (2023 – auj.)
+Financial Controller France, Benelux, Germany – Atradius (2017 – 2024)
 
-SMQ multisites, QSSE, relation autorités (DSAC, DGAC, GTA), certification GDP en 6 mois, Norme 9120B. Formations de responsable sûreté.
+Pilotage financier multi-pays : budgeting, forecasting, dashboards stratégiques COMEX/CODIR, cost control, variance analysis, data governance. Business Analyst sur projet digital paneuropéen > 50M€. Chef de budget programme digital Europe.
 
-Responsable Excellence Opérationnelle – EurotransPharma / Walden Group (2022 – 2023)
+Bond Account Manager – Atradius (2017)
 
-KPI Power BI, Lean, résolution 8D/Ishikawa, réduction coûts non-qualité.
+Gestion de portefeuille IDF/NE, analyse de risques, reporting stratégique, relation clients corporate.
 
-Responsable Qualité Multisite – EurotransPharma (2019 – 2022)
+Financial Analyst – Barclays (2014 – 2017)
 
-SMQ multisite, certifications ISO9001 & GDP, audits, CAPA, revue de direction.
+Analyse financière, construction d'outils de pilotage, reporting mensuel, analyse coûts complets. Automatisation du reporting mensuel.
 
-Superviseur Qualité & Service Client – EurotransPharma (2018 – 2019)
+Contrôleur de Gestion – LBMG Worklabs (2012 – 2014)
 
-Gestion réclamations, audit sous-traitants, CAPA, relation client.
+Contrôle de gestion opérationnel, suivi budgétaire, analyse des écarts, tableaux de bord automatisés, support décisionnel direction.
 
-Analyste Qualité – ARGOS (2011 – 2018)
+Compétences clés : Budgeting & Forecasting, Variance Analysis, Cost Control, Data Governance, Financial Modeling, Business Analysis, Excel Expert, Power BI, Power Pivot, SAP, Business Objects, Qlikview, R Studio, Access, pilotage multi-pays, communication COMEX/CODIR, leadership analytique, optimisation des processus, dashboards avancés.
 
-SMQ supply chain, traçabilité, audits fournisseurs, NC, entrepôt/stock.
+Résultats : +12% fiabilité reporting, -8% coûts opérationnels, 3 pays harmonisés (FR/BE/DE), pilotage budgétaire 50M€, 30+ dashboards déployés, +15% précision forecast.
 
-Responsable Qualité – CCL Labels (Pharma / BPF)
-
-Qualité étiquetage pharma, BPF, artworks, traçabilité, CAPA, audits clients.
-
-Compétences clés : ISO 9001, ISO 14001, ISO 27001, ISO 45001, GDP, BPF, QSE, SMQ multisite, Lean / ExOps, Audits internes/externes, CAPA (8D, Ishikawa, 5Why), management transversal, pilotage multi-sites, Power BI, Power Automate, digitalisation, IA pour la performance, Construction de SaaS opérationnel.
-
-Adapte toujours ton analyse à L’OFFRE fournie en input.`,
-    prompt: `Voici une offre d’emploi / un besoin d’entreprise.
-Analyse la compatibilité entre ce besoin et le profil de Vivien Closse décrit dans tes instructions système.
+Adapte toujours ton analyse à L'OFFRE fournie en input.`,
+    prompt: `Voici une offre d'emploi / un besoin d'entreprise.
+Analyse la compatibilité entre ce besoin et le profil de Nicolas Lemoine décrit dans tes instructions système.
 
 Offre :
 ${jobDescription}`,

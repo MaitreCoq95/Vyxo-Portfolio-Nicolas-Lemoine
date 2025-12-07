@@ -1,7 +1,7 @@
 import { ArrowRight, CheckCircle2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-const badges = ["ISO 9001", "GDP", "Lean Six Sigma", "Power BI", "Multi-sites", "ExOps", "Sûreté aéroportuaire"]
+const badges = ["Excel Expert", "Power BI", "SAP", "Budgeting & Forecasting", "Cost Control", "Business Analysis", "Data Quality", "Financial Reporting"]
 
 export function HeroSection() {
   return (
@@ -11,16 +11,18 @@ export function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6">
-            <p className="text-primary font-medium">Responsable Qualité Groupe & Excellence Opérationnelle</p>
+            <p className="text-primary font-medium">Chief Performance & Finance Strategist</p>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
-              <span className="text-primary">Vivien Closse</span>
+              <span className="text-primary">Nicolas Lemoine</span>
             </h1>
 
             <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-              Expert en structuration de systèmes Qualité et pilotage de la performance opérationnelle.
+              Expert en contrôle de gestion, pilotage de la performance et optimisation financière Europe ↔ Afrique.
               <br />
-              Je transforme les contraintes normatives en leviers de croissance pour les entreprises du Transport, de la Pharma et de la Logistique.
+              <span className="font-semibold text-foreground">« Je transforme les chiffres en leviers de performance mesurable. »</span>
+              <br />
+              Plus de 10 ans d'expérience en pilotage financier multi-pays (France, Benelux, Allemagne) : budgeting, forecasting, cost control, digitalisation des processus, et support décisionnel COMEX/CODIR.
             </p>
 
             {/* Badges */}
@@ -57,22 +59,22 @@ export function HeroSection() {
               {/* Image container */}
               <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-2xl overflow-hidden border-2 border-primary/30">
                 <img
-                  src="/vivien-closse-profile-new.jpg"
-                  alt="Vivien Closse - Responsable Qualité Groupe"
+                  src="/nicolas-lemoine-profile.jpg"
+                  alt="Nicolas Lemoine - Chief Performance & Finance Strategist"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
 
               {/* Stats card */}
               <div className="absolute -bottom-4 -left-4 bg-card border border-border rounded-xl p-4 shadow-xl">
-                <div className="text-2xl font-bold text-primary">15+</div>
+                <div className="text-2xl font-bold text-primary">10+</div>
                 <div className="text-sm text-muted-foreground">Années d'expérience</div>
               </div>
 
               {/* Services card */}
               <div className="absolute -top-4 -right-4 bg-card border border-border rounded-xl p-4 shadow-xl">
                 <p className="text-sm text-muted-foreground mb-1">Spécialités</p>
-                <p className="text-foreground font-medium text-sm">Transport • Pharma • Logistique</p>
+                <p className="text-foreground font-medium text-sm">Finance • Gestion • Performance • Digital</p>
               </div>
             </div>
           </div>

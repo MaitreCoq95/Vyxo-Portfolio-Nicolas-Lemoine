@@ -21,9 +21,9 @@ export function FloatingCTA() {
   return (
     <div className="fixed bottom-6 right-6 z-50">
       <Button size="lg" className="rounded-full shadow-lg animate-bounce-slow" asChild>
-        <a href="tel:0617997198">
+        <a href="tel:+33600000000">
           <Phone className="mr-2 h-4 w-4" />
-          Prendre RDV
+          Me Contacter
         </a>
       </Button>
     </div>

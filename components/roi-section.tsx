@@ -2,40 +2,40 @@ import { TrendingDown, TrendingUp, Rocket, BarChart3, CheckCircle2, Award } from
 
 const results = [
   {
-    icon: CheckCircle2,
-    value: "50",
-    label: "Audits Réussis",
-    description: "Clients & Autorités",
-  },
-  {
-    icon: Rocket,
-    value: "100+",
-    label: "Projets Réalisés",
-    description: "Amélioration & Conformité",
-  },
-  {
-    icon: Award,
-    value: "10+",
-    label: "Certifications",
-    description: "Obtenues & Maintenues",
-  },
-  {
     icon: TrendingUp,
-    value: "6",
-    label: "Mois",
-    description: "Certification GDP obtenue",
+    value: "+12%",
+    label: "Fiabilité Reporting",
+    description: "Amélioration de la qualité des données",
   },
   {
     icon: TrendingDown,
-    value: "-25%",
-    label: "Coûts Non-Qualité",
-    description: "Réduction opérationnelle",
+    value: "-8%",
+    label: "Coûts Opérationnels",
+    description: "Réduction via optimisation",
+  },
+  {
+    icon: CheckCircle2,
+    value: "3 Pays",
+    label: "Harmonisés",
+    description: "Modèle financier unique FR/BE/DE",
+  },
+  {
+    icon: Rocket,
+    value: "50M€",
+    label: "Projet Digital",
+    description: "Pilotage budgétaire Europe",
   },
   {
     icon: BarChart3,
-    value: "100%",
-    label: "Digitalisation",
-    description: "KPI & Process automatisés",
+    value: "30+",
+    label: "Dashboards",
+    description: "Déployés et automatisés",
+  },
+  {
+    icon: Award,
+    value: "+15%",
+    label: "Précision Forecast",
+    description: "Amélioration des prévisions",
   },
 ]
 
@@ -44,9 +44,9 @@ export function ROISection() {
     <section className="py-20 bg-secondary/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">ROI Chiffré & Résultats</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Impact en Chiffres</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Des résultats concrets et mesurables pour votre entreprise
+            Des résultats mesurables et une performance financière optimisée
           </p>
         </div>
 

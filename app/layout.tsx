@@ -8,9 +8,9 @@ const _inter = Inter({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Vivien Closse | Consultant QSE & Excellence Opérationnelle",
+  title: "Nicolas Lemoine | Chief Performance & Finance Strategist | Vyxo Consulting",
   description:
-    "Consultant expert en Qualité, Sécurité, Environnement et Excellence Opérationnelle. Spécialiste Transport, Logistique, Pharma GDP.",
+    "Expert en contrôle de gestion, pilotage de la performance et optimisation financière Europe ↔ Afrique. Finance • Gestion • Cost Control • Business Analysis • Digital.",
   generator: "v0.app",
   icons: {
     icon: [

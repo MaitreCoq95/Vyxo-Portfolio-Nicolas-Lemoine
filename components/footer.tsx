@@ -9,14 +9,14 @@ export function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">VC</span>
+                <span className="text-primary-foreground font-bold text-sm">NL</span>
               </div>
-              <span className="font-semibold text-foreground">Vivien Closse</span>
+              <span className="font-semibold text-foreground">Nicolas Lemoine</span>
             </div>
             <p className="text-muted-foreground text-sm">
-              Responsable Qualité Groupe & Excellence Opérationnelle
+              Chief Performance & Finance Strategist
               <br />
-              Transport • Logistique • Pharma GDP
+              Finance • Gestion • Performance • Digital
             </p>
           </div>
 
@@ -47,11 +47,11 @@ export function Footer() {
             <h4 className="font-semibold text-foreground mb-4">Contact</h4>
             <div className="space-y-3">
               <a
-                href="mailto:vivienclosse@gmail.com"
+                href="mailto:nicolas.lemoine@vyxoconsult.com"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary text-sm"
               >
                 <Mail className="w-4 h-4" />
-                vivienclosse@gmail.com
+                nicolas.lemoine@vyxoconsult.com
               </a>
               <a
                 href="mailto:contact@vyxoconsult.com"
@@ -61,14 +61,14 @@ export function Footer() {
                 contact@vyxoconsult.com
               </a>
               <a
-                href="tel:+33617997198"
+                href="tel:+33600000000"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary text-sm"
               >
                 <Phone className="w-4 h-4" />
-                06.17.99.71.98
+                06.00.00.00.00
               </a>
               <a
-                href="https://www.linkedin.com/in/vivienclosse"
+                href="https://www.linkedin.com/in/nicolas-lemoine"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary text-sm"
@@ -81,7 +81,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Vivien Closse. Tous droits réservés.
+          © {new Date().getFullYear()} Nicolas Lemoine. Tous droits réservés.
         </div>
       </div>
     </footer>
