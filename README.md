@@ -1,26 +1,29 @@
-# Portfolio website design
+# Portfolio Nicolas Lemoine - Vyxo Consulting
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+*Chief Performance & Finance Strategist*
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/vivienclosse-8169s-projects/v0-v0-portofolio-closse-vivien)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/sfO38VXXkuj)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com)
+[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app)
 
 ## Overview
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+Portfolio professionnel de Nicolas Lemoine, expert en Finance, Contrôle de Gestion et Pilotage de la Performance.
 
-## Deployment
+### Expertise
+- Finance & Gestion Multi-Pays (France, Benelux, Allemagne)
+- Budgeting & Forecasting
+- Cost Control & Optimisation
+- Business Analysis & Performance Management
+- Digitalisation Finance (Power BI, SAP, Excel Expert)
 
-Your project is live at:
+## Tech Stack
 
-**[https://vercel.com/vivienclosse-8169s-projects/v0-v0-portofolio-closse-vivien](https://vercel.com/vivienclosse-8169s-projects/v0-v0-portofolio-closse-vivien)**
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.app/chat/sfO38VXXkuj](https://v0.app/chat/sfO38VXXkuj)**
+- Next.js 16.0.7 (App Router)
+- TypeScript
+- Tailwind CSS
+- Radix UI Components
+- OpenAI API (Job Matching)
+- Gamma API (CV Generation)
 
 ## How It Works
 

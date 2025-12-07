@@ -22,9 +22,9 @@ export function Header() {
           {/* Logo */}
           <a href="#" className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">VC</span>
+              <span className="text-primary-foreground font-bold text-sm">NL</span>
             </div>
-            <span className="font-semibold text-foreground">Vivien Closse</span>
+            <span className="font-semibold text-foreground">Nicolas Lemoine</span>
           </a>
 
           {/* Desktop Nav */}
@@ -42,10 +42,10 @@ export function Header() {
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="https://www.linkedin.com/in/vivienclosse" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/nicolas-lemoine" target="_blank" rel="noopener noreferrer">
               <Linkedin className="w-5 h-5 text-muted-foreground hover:text-primary transition-colors" />
             </a>
-            <a href="mailto:vivienclosse@gmail.com">
+            <a href="mailto:nicolas.lemoine@vyxoconsult.com">
               <Mail className="w-5 h-5 text-muted-foreground hover:text-primary transition-colors" />
             </a>
             <Button size="sm" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>

@@ -1,30 +1,30 @@
 const skillCategories = [
   {
-    title: "Qualité & Conformité",
-    skills: ["ISO 9001", "ISO 14001", "ISO 27001", "ISO 45001", "HACCP", "GDP / BPD Pharma", "CAPA", "Audits"],
+    title: "Outils Finance & BI",
+    skills: ["Excel Expert", "Power BI", "Power Pivot", "Qlikview", "R Studio", "Access", "Tableaux de bord avancés"],
   },
   {
-    title: "Excellence Opérationnelle",
-    skills: ["Lean Six Sigma", "DMAIC", "5S", "VSM", "8D"],
+    title: "Systèmes & ERP",
+    skills: ["SAP", "Business Objects", "Oracle", "Microsoft Dynamics", "Hyperion", "Consolidation"],
   },
   {
-    title: "Transport & Logistique",
-    skills: ["Chaîne du froid", "GDP Transport", "Multi-sites", "TMS/WMS"],
+    title: "Méthodologies Finance",
+    skills: ["Budgeting & Forecasting", "Variance Analysis", "Cost Control", "Data Governance", "Financial Modeling", "Business Analysis"],
   },
   {
-    title: "Digitalisation & SaaS",
-    skills: ["Power BI", "Power Automate", "Zapier", "n8n", "API", "Construction SaaS"],
+    title: "Soft Skills & Management",
+    skills: ["Leadership Analytique", "Communication COMEX", "Synthèse & Stratégie", "Résolution Problèmes", "Business Partnering", "Change Management"],
   },
 ]
 
 const certifications = [
-  "Master 2 QSE",
-  "Lean Six Sigma Green Belt",
-  "Anglais C1",
-  "ISO 9001 Lead Auditor",
-  "GDP Certified",
-  "Norme 9120B",
-  "Responsable Sûreté",
+  "Master Finance & Gestion",
+  "Certified Financial Analyst",
+  "Advanced Excel & Power BI",
+  "SAP Certified",
+  "Data Analytics Professional",
+  "Business Analysis",
+  "Anglais Professionnel C1",
 ]
 
 export function SkillsSection() {
@@ -32,8 +32,8 @@ export function SkillsSection() {
     <section className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Stack & Certifications</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">Les outils et compétences que je maîtrise</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Tech Stack & Compétences</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">Outils financiers, systèmes ERP et méthodologies que je maîtrise pour piloter la performance</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">

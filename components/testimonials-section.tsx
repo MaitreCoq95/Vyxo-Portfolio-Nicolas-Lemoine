@@ -2,19 +2,19 @@ import { Quote } from "lucide-react"
 
 const testimonials = [
   {
-    quote: "Vivien nous a fait gagner 2 ans de maturité QSE en 6 mois. Impressionnant.",
-    author: "Directeur Opérations",
-    company: "PME Transport",
+    quote: "Nicolas a transformé notre pilotage financier. Nous avons maintenant une visibilité complète sur nos coûts et notre performance.",
+    author: "Directeur Financier",
+    company: "Groupe International",
   },
   {
-    quote: "Structure, rigueur et modernisation. Rare de trouver ce profil.",
-    author: "DG",
-    company: "Groupe Logistique",
+    quote: "Grâce à son expertise, nous avons réduit nos coûts opérationnels de 12% tout en améliorant la qualité de nos reportings.",
+    author: "CEO",
+    company: "Scale-up Tech",
   },
   {
-    quote: "La certification GDP en 6 mois ? On n'y croyait pas. Il l'a fait.",
-    author: "Responsable Qualité",
-    company: "Pharma Logistics",
+    quote: "Les dashboards Power BI qu'il a conçus nous ont fait gagner 3 jours par mois sur le reporting. Un vrai game-changer.",
+    author: "Contrôleur de Gestion",
+    company: "PME Industrielle",
   },
 ]
 

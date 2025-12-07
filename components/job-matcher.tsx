@@ -152,7 +152,7 @@ export function JobMatcher() {
                           <PolarAngleAxis dataKey="subject" tick={{ fontSize: 12 }} />
                           <PolarRadiusAxis angle={30} domain={[0, 100]} />
                           <Radar
-                            name="Vivien"
+                            name="Nicolas"
                             dataKey="A"
                             stroke="#d4a853"
                             fill="#d4a853"

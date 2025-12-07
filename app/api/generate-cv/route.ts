@@ -23,22 +23,22 @@ export async function POST(req: Request) {
     }
 
     const prompt = `
-      Génère un document de 2 pages (Format Présentation/Deck) pour Vivien Closse, candidat au poste décrit ci-dessous.
-      
+      Génère un document de 2 pages (Format Présentation/Deck) pour Nicolas Lemoine, candidat au poste décrit ci-dessous.
+
       **Page 1 : Profil & Atouts pour le poste**
-      - Titre : Vivien Closse - Responsable Qualité Groupe & Excellence Opérationnelle
-      - Résumé du profil : 12+ ans d'expérience, Expert Multisites, Pharma GDP, ISO, Lean Six Sigma.
+      - Titre : Nicolas Lemoine - Chief Performance & Finance Strategist
+      - Résumé du profil : 10+ ans d'expérience, Expert Finance Multi-Pays (FR/BE/DE), Budgeting & Forecasting, Cost Control, Power BI, SAP.
       - Pourquoi ce profil matche avec l'offre (Score de match : ${jobAnalysis.matchScore}%) :
         - Points forts : ${jobAnalysis.keyMatches.join(", ")}.
-      - Contact : vivienclosse@gmail.com | 06.17.99.71.98 | linkedin.com/in/vivienclosse
+      - Contact : nicolas.lemoine@vyxoconsult.com | 06.00.00.00.00 | linkedin.com/in/nicolas-lemoine
 
       **Page 2 : Analyse & Proposition de Valeur**
       - Analyse de l'offre : ${jobDescription.substring(0, 200)}...
       - Solutions aux besoins (Basé sur les manques identifiés : ${jobAnalysis.missingSkills.join(", ")}) :
         - ${jobAnalysis.recommendations.join("\n        - ")}
-      - Conclusion : "Prêt à transformer vos défis qualité en leviers de performance dès le premier mois."
+      - Conclusion : "Prêt à transformer vos données financières en leviers de performance mesurable dès le premier mois."
 
-      **Style :** Professionnel, Bleu Marine & Cyan (Tech/Corporate), Moderne.
+      **Style :** Professionnel, Bleu Marine & Or (Finance/Corporate), Moderne.
     `
 
     const initialResponse = await fetch("https://public-api.gamma.app/v1.0/generations", {
