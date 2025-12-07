@@ -137,7 +137,7 @@ export function DiplomasSection() {
             </div>
 
             {/* Terrain Certifications */}
-            <div className="bg-[#0D2438] border border-[#1E4976] rounded-xl p-6">
+            <div className="bg-[#0D2438] border border-[#1E4976] rounded-xl p-6 mb-6">
               <h4 className="text-sm font-semibold text-cyan-400 mb-4 uppercase tracking-wide">Certifications Terrain</h4>
               <div className="space-y-3">
                 {terrainCertifications.map((cert, index) => (
@@ -149,6 +149,69 @@ export function DiplomasSection() {
                     <span className="text-xs text-gray-400">{cert.description}</span>
                   </div>
                 ))}
+              </div>
+            </div>
+
+            {/* Data & Governance Certifications */}
+            <div className="bg-[#0D2438] border border-[#1E4976] rounded-xl p-6">
+              <h4 className="text-sm font-semibold text-cyan-400 mb-4 uppercase tracking-wide">🟦 Certifications Data & Gouvernance</h4>
+              <p className="text-xs text-gray-400 mb-4 italic">Spécifiques Finance & Reporting</p>
+              
+              <div className="space-y-4">
+                {/* ISO 8000 */}
+                <div className="border-l-2 border-cyan-400 pl-4">
+                  <h5 className="text-sm font-semibold text-white mb-1">ISO 8000 — Data Quality Management</h5>
+                  <p className="text-xs text-gray-400 mb-2">Cadre méthodologique pour la qualité de la donnée : exactitude, cohérence, traçabilité, fiabilité.</p>
+                  <div className="flex items-start gap-2 text-xs text-cyan-300">
+                    <span className="mt-0.5">➡️</span>
+                    <div>
+                      <p className="font-medium mb-1">Applications :</p>
+                      <ul className="space-y-1 text-gray-400">
+                        <li>• Contrôle de cohérence financière France/Benelux/Allemagne</li>
+                        <li>• Variance analysis multi-pays</li>
+                        <li>• Standardisation des reporting packs</li>
+                        <li>• Gouvernance data internationale</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* ISO 25012 */}
+                <div className="border-l-2 border-cyan-400 pl-4">
+                  <h5 className="text-sm font-semibold text-white mb-1">ISO 25012 — Data Quality Model</h5>
+                  <p className="text-xs text-gray-400 mb-2">Modèle officiel de qualité des données (15 caractéristiques).</p>
+                  <div className="flex items-start gap-2 text-xs text-cyan-300">
+                    <span className="mt-0.5">➡️</span>
+                    <p className="text-gray-400">Cadre utilisé pour <span className="text-cyan-400 font-medium">Vyxo Data Quality Scan™</span> : nettoyage, scoring et audit de la donnée financière.</p>
+                  </div>
+                </div>
+
+                {/* ISO 27001 */}
+                <div className="border-l-2 border-cyan-400 pl-4">
+                  <h5 className="text-sm font-semibold text-white mb-1">ISO 27001 — Sécurité de l'Information</h5>
+                  <p className="text-xs text-gray-400 mb-2">Principes de confidentialité, intégrité et disponibilité.</p>
+                  <div className="flex items-start gap-2 text-xs text-cyan-300">
+                    <span className="mt-0.5">➡️</span>
+                    <div>
+                      <p className="font-medium mb-1">Appliqué à :</p>
+                      <ul className="space-y-1 text-gray-400">
+                        <li>• Données financières consolidées</li>
+                        <li>• Reporting réglementaire</li>
+                        <li>• Assistants IA internes</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* ISO 38500 */}
+                <div className="border-l-2 border-cyan-400 pl-4">
+                  <h5 className="text-sm font-semibold text-white mb-1">ISO 38500 — Gouvernance des SI</h5>
+                  <p className="text-xs text-gray-400 mb-2">Pilotage stratégique de la donnée et des systèmes financiers.</p>
+                  <div className="flex items-start gap-2 text-xs text-cyan-300">
+                    <span className="mt-0.5">➡️</span>
+                    <p className="text-gray-400">Aligné avec le rôle <span className="text-white font-medium">Business Analyst</span> sur projets digitaux <span className="text-cyan-400 font-medium">50M€</span></p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
