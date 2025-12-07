@@ -47,7 +47,6 @@ const premiumServices = [
       "Scoring qualitatif de la donnée",
       "Plan de correction & standardisation",
     ],
-    pricing: "Diagnostic : 3 000€ à 10 000€",
     badge: "Un service unique sur le marché, combinant finance, data et excellence opérationnelle.",
     color: "from-emerald-500/20 to-teal-500/20",
     borderColor: "border-emerald-500/30",
