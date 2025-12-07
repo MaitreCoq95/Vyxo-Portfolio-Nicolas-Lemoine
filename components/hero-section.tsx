@@ -58,7 +58,7 @@ export function HeroSection() {
               {/* Image container */}
               <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-2xl overflow-hidden border-2 border-primary/30">
                 <img
-                  src="/nicolas-lemoine-profile.jpg"
+                  src="/nicolas-lemoine-profile.png"
                   alt="Nicolas Lemoine - Chief Performance & Finance Strategist"
                   className="w-full h-full object-cover object-top"
                 />
