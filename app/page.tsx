@@ -1,6 +1,7 @@
 import { Header } from "../components/header"
 import { HeroSection } from "../components/hero-section"
 import { ServicesSection } from "../components/services-section"
+import { PremiumServicesSection } from "../components/premium-services-section"
 import { TimelineSection } from "../components/timeline-section"
 import { BeforeAfterSection } from "../components/before-after-section"
 import { ROISection } from "../components/roi-section"
@@ -20,6 +21,7 @@ export default function Home() {
       <Header />
       <HeroSection />
       <ServicesSection />
+      <PremiumServicesSection />
       <TimelineSection />
       <BeforeAfterSection />
       <ROISection />

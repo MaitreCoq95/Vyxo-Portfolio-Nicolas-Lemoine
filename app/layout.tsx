@@ -10,7 +10,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Nicolas Lemoine | Chief Performance & Finance Strategist | Vyxo Consulting",
   description:
-    "Expert en contrôle de gestion, pilotage de la performance et optimisation financière Europe ↔ Afrique. Finance • Gestion • Cost Control • Business Analysis • Digital.",
+    "Expert en contrôle de gestion, pilotage de la performance et optimisation financière. Finance prédictive, IA finance, automatisation reporting, data quality audit, Power BI, Excel avancé. Services premium : reporting automatisé par IA, modélisation financière prédictive, Vyxo Data Quality Scan™.",
   generator: "v0.app",
   icons: {
     icon: [
