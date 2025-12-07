@@ -84,7 +84,8 @@ export function DiplomasSection() {
           </div>
 
           {/* Data & Governance Certifications */}
-          <div> className="bg-[#0D2438] border border-[#1E4976] rounded-xl p-6">
+          <div>
+            <div className="bg-[#0D2438] border border-[#1E4976] rounded-xl p-6">
               <h4 className="text-sm font-semibold text-cyan-400 mb-4 uppercase tracking-wide">🟦 Certifications Data & Gouvernance</h4>
               <p className="text-xs text-gray-400 mb-4 italic">Spécifiques Finance & Reporting</p>
               
