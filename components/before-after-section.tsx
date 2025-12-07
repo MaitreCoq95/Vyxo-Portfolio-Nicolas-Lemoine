@@ -1,11 +1,11 @@
 import { ArrowRight, X, Check } from "lucide-react"
 
 const comparisons = [
-  { before: "Process flous", after: "Process standardisés" },
-  { before: "Chaîne du froid non maîtrisée", after: "Conformité GDP mesurée" },
-  { before: "Pas de KPIs", after: "Power BI automatisé" },
-  { before: "Audits douloureux", after: "Audits fluides et réussis" },
-  { before: "Gaspillages & coûts", after: "Réduction + ROI mesurable" },
+  { before: "Visibilité floue sur les marges & résultats", after: "Moteurs de marge clarifiés et pilotés" },
+  { before: "Budgets subis, prévisions peu fiables", after: "Processus budgétaire structuré + forecast fiable" },
+  { before: "KPIs financiers éparpillés dans des fichiers Excel", after: "KPIs unifiés dans des dashboards clairs (Power BI, Excel avancé)" },
+  { before: "Reporting mensuel lourd, lent et source d'erreurs", after: "Reporting fiabilisé et largement automatisé" },
+  { before: "Décisions prises à l'intuition plutôt qu'aux chiffres", after: "Décisions DG guidées par la donnée & le ROI" },
 ]
 
 export function BeforeAfterSection() {
@@ -14,7 +14,7 @@ export function BeforeAfterSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Avant / Après mon intervention</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">Transformation concrète de votre organisation</p>
+          <p className="text-muted-foreground max-w-2xl mx-auto">Transformation concrète de votre performance financière</p>
         </div>
 
         <div className="max-w-4xl mx-auto">
