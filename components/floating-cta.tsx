@@ -3,9 +3,11 @@
 import { useEffect, useState } from "react"
 import { Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useTranslation } from "@/lib/i18n/useTranslation"
 
 export function FloatingCTA() {
   const [isVisible, setIsVisible] = useState(false)
+  const { t } = useTranslation()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,7 +25,7 @@ export function FloatingCTA() {
       <Button size="lg" className="rounded-full shadow-lg animate-bounce-slow" asChild>
         <a href="tel:+33600000000">
           <Phone className="mr-2 h-4 w-4" />
-          Me Contacter
+          {t.floatingCta.text}
         </a>
       </Button>
     </div>

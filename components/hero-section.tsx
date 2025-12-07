@@ -1,9 +1,23 @@
+'use client'
+
 import { ArrowRight, CheckCircle2 } from "lucide-react"
 import { Button } from "@/components/ui/button"
-
-const badges = ["Excel Expert", "Power BI", "SAP", "Budgeting & Forecasting", "Cost Control", "Business Analysis", "Data Quality", "Financial Reporting"]
+import { useTranslation } from "@/lib/i18n/useTranslation"
 
 export function HeroSection() {
+  const { t } = useTranslation()
+
+  const badges = [
+    "Excel Expert",
+    "Power BI",
+    "SAP",
+    "Budgeting & Forecasting",
+    "Cost Control",
+    "Business Analysis",
+    "Data Quality",
+    "Financial Reporting"
+  ]
+
   return (
     <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden">
       {/* Background gradient */}
@@ -11,18 +25,14 @@ export function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6">
-            <p className="text-primary font-medium">Chief Performance & Finance Strategist</p>
+            <p className="text-primary font-medium">{t.hero.title}</p>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
-              <span className="text-primary">Nicolas Lemoine</span>
+              <span className="text-primary">{t.hero.name}</span>
             </h1>
 
             <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-              Expert en contrôle de gestion, pilotage de la performance et optimisation financière Europe ↔ Afrique.
-              <br />
-              <span className="font-semibold text-foreground">« Je transforme les chiffres en leviers de performance mesurable. »</span>
-              <br />
-              Plus de 10 ans d'expérience en pilotage financier multi-pays (France, Benelux, Allemagne) : budgeting, forecasting, cost control, digitalisation des processus, et support décisionnel COMEX/CODIR.
+              {t.hero.bio}
             </p>
 
             {/* Badges */}
@@ -42,7 +52,7 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
                 <a href="#contact">
-                  Me Contacter
+                  {t.hero.cta.primary}
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </a>
               </Button>
@@ -50,10 +60,11 @@ export function HeroSection() {
           </div>
 
           {/* Right Content - Profile Image */}
-          <div className="relative flex justify-center lg:justify-end">
+          <div className="relative lg:pl-12">
             <div className="relative">
-              {/* Glow effect */}
-              <div className="absolute -inset-4 bg-primary/20 rounded-full blur-3xl" />
+              {/* Decorative elements */}
+              <div className="absolute -top-4 -left-4 w-72 h-72 bg-primary/10 rounded-2xl -z-10" />
+              <div className="absolute -bottom-4 -right-4 w-72 h-72 bg-primary/5 rounded-2xl -z-10" />
 
               {/* Image container */}
               <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-2xl overflow-hidden border-2 border-primary/30">
@@ -64,16 +75,29 @@ export function HeroSection() {
                 />
               </div>
 
-              {/* Stats card */}
-              <div className="absolute -bottom-4 -left-4 bg-card border border-border rounded-xl p-4 shadow-xl">
-                <div className="text-2xl font-bold text-primary">10+</div>
-                <div className="text-sm text-muted-foreground">Années d'expérience</div>
+              {/* Stats Cards */}
+              <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-4 shadow-lg">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <span className="text-2xl font-bold text-primary">10+</span>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-foreground">{t.hero.stats.experience}</p>
+                    <p className="text-xs text-muted-foreground">Finance & Data</p>
+                  </div>
+                </div>
               </div>
 
-              {/* Services card */}
-              <div className="absolute -top-4 -right-4 bg-card border border-border rounded-xl p-4 shadow-xl">
-                <p className="text-sm text-muted-foreground mb-1">Spécialités</p>
-                <p className="text-foreground font-medium text-sm">Finance • Gestion • Performance • Digital</p>
+              <div className="absolute -top-6 -right-6 bg-card border border-border rounded-xl p-4 shadow-lg">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <span className="text-2xl font-bold text-primary">3</span>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-foreground">{t.hero.stats.countries}</p>
+                    <p className="text-xs text-muted-foreground">FR/BE/DE</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
